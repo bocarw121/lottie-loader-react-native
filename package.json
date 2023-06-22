@@ -1,8 +1,8 @@
 {
-  "name": "lottie-loader-react-native",
+  "name": "lottie-loader-react-native-tester",
   "version": "1.1.0",
   "description": "A React Native Loader Component which uses Airbnb's Lottie to render smooth and beautiful loading animations.",
-  "source": "src/index.ts",
+  "source": "src/index.tsx",
   "main": "dist/main.js",
   "module": "dist/module.js",
   "types": "dist/types.d.ts",

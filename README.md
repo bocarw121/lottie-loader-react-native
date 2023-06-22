@@ -28,17 +28,25 @@ If you're using expo no extra step is required.
 
 ---
 
-```
+```tsx
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, StyleProp, ViewStyle } from "react-native";
 import { LottieLoader } from "lottie-loader-react-native";
 
-export const Loading = ({ visible }) => {
+interface LoadingProps {
+  visible: boolean;
+  animationStyle?: StyleProp<ViewStyle>;
+}
+
+export const Loading: React.FC<LoadingProps> = ({
+  visible,
+  animationStyle,
+}) => {
   return (
     <LottieLoader
       visible={visible}
       source={require("./loader.json")}
-      animationStyle={styles.lottie}
+      animationStyle={animationStyle}
       speed={1}
     />
   );
@@ -47,8 +55,6 @@ export const Loading = ({ visible }) => {
 const styles = StyleSheet.create({
   lottie: { width: 100, height: 100 },
 });
-
-
 ```
 
 ### Lottie Loader files
