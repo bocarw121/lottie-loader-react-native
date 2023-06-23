@@ -11,8 +11,12 @@ A React Native Loader Component which uses Airbnb's [Lottie](https://github.com/
 
 ---
 
-```
-npm i -S lottie-loader-react-native
+```sh
+npm i lottie-loader-react-native lottie-react-native
+
+or
+
+yarn add lottie-loader-react-native lottie-react-native
 ```
 
 #### React Native CLI
@@ -63,13 +67,13 @@ You can find free lottie files for your loaders [here](https://lottiefiles.com/s
 
 ## Props
 
-| Prop                 | Description                                                                                                                                                                                                                                                     | Default                                              |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| **`source`**         | The source of animation. Can be referenced as a local asset by a string, or remotely with an object with a `uri` property, or it can be an actual JS object of an animation, obtained (for example) with something like `require('../path/to/animation.json')`. | [Lottie Object](https://lottiefiles.com/1531-loader) |
-| **`visible`**        | Controls the visibility of the loader.                                                                                                                                                                                                                          | `false`                                              |
-| **`animationStyle`** | The style to be applied to the Lottie.                                                                                                                                                                                                                          | -                                                    |
-| **`speed`**          | The speed the animation will progress.                                                                                                                                                                                                                          | `1`                                                  |
-| **`loop`**           | A boolean flag indicating whether or not the animation should loop.                                                                                                                                                                                             | `true`                                               |
+| Prop          | Description                                                                                                                                                                                                                                                     | Default                                              |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **`source`**  | The source of animation. Can be referenced as a local asset by a string, or remotely with an object with a `uri` property, or it can be an actual JS object of an animation, obtained (for example) with something like `require('../path/to/animation.json')`. | [Lottie Object](https://lottiefiles.com/1531-loader) |
+| **`visible`** | Controls the visibility of the loader.                                                                                                                                                                                                                          | `false`                                              |
+| **`style`**   | The style to be applied to the Lottie.                                                                                                                                                                                                                          | -                                                    |
+| **`speed`**   | The speed the animation will progress.                                                                                                                                                                                                                          | `1`                                                  |
+| **`loop`**    | A boolean flag indicating whether or not the animation should loop.                                                                                                                                                                                             | `true`                                               |
 
 ## License
 
